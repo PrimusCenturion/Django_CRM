@@ -12,6 +12,7 @@ This will be a temporary roadmap and I might remove some or add to it in the fut
      - [ ] Signup, Login, Logout
      - [ ] Basic Navigation
      - [ ] Basic Pages
+     - [ ] Basic Styling
 
 1. **Contact Management:**
    - [ ] *Explanation:* The ability to store and organize detailed information about contacts, including customers, leads, and other business associates.

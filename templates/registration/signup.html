@@ -4,12 +4,22 @@
 {% block TITLE %} - Sign Up{% endblock TITLE %}
 
 {% block CONTENT %}
-    <h2>Sign Up</h2>
-    <form method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <div class="d-grid gap-2 col-6 mx-auto">
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-    </div>
-    </form>
+
+<div
+    class="d-flex flex-column justify-content-center align-items-center position-absolute top-50 start-50 translate-middle w-75">
+
+            <div class="d-flex">
+                <h2>Sign Up</h2>
+            </div>
+
+            <form method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+            </form>
+
+</div>
+
 {% endblock CONTENT %}
