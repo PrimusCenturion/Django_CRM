@@ -6,6 +6,13 @@ This is my first attempt at a proper django project and I though a CRM would be 
 
 This will be a temporary roadmap and I might remove some or add to it in the future 
 
+0. **Basic Setup**
+   - [ ] *Explination:* Setup Django project that has basic functionality
+   - [ ] *Key Features:*
+     - [ ] Signup, Login, Logout
+     - [ ] Basic Navigation
+     - [ ] Basic Pages
+
 1. **Contact Management:**
    - [ ] *Explanation:* The ability to store and organize detailed information about contacts, including customers, leads, and other business associates.
    - [ ] *Key Features:*
@@ -61,7 +68,7 @@ This will be a temporary roadmap and I might remove some or add to it in the fut
      - [ ] Follow-up reminders.
      - [ ] Workflow triggers based on customer interactions.
 
-9. **Analytics and Reporting:**
+9.  **Analytics and Reporting:**
    - [ ] *Explanation:* Providing insights into customer behavior, sales performance, and overall CRM effectiveness.
    - [ ] *Key Features:*
      - [ ] Customizable dashboards.
