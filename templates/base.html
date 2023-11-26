@@ -23,6 +23,7 @@
 
 <body class="{% block BODY_CLASS %}{% endblock BODY_CLASS %}">
 
+    {% block NAVIGATION %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Fifth navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Django CRM</a>
@@ -75,6 +76,7 @@
             </div>
         </div>
     </nav>
+    {% endblock NAVIGATION %}
 
     {% block CONTENT %}
     {% endblock CONTENT %}
