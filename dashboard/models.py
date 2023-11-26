@@ -22,3 +22,5 @@ class Lead(models.Model):
     # email = models.EmailField(blank=True, null=True)
     phone_number = PhoneNumberField(blank=True, null=True)
 
+    def __str__(self):
+        return self.first_name
