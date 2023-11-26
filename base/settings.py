@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'dashboard.apps.DashboardConfig',
     'crispy_forms',
     'crispy_bootstrap5',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
