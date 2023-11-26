@@ -1,8 +1,18 @@
 /* 
 font-family: 'Heebo', sans-serif;
+Heebo weights: 400;500;600
+
 font-family: 'Roboto', sans-serif;
+Roboto weights: 300;400;500
 */
 
 body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
     font-family: 'Heebo', sans-serif;
+    font-weight: 600;
 }
