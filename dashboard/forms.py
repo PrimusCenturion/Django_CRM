@@ -10,6 +10,10 @@ class LeadCreationForm(forms.ModelForm):
         widget=PhoneNumberPrefixWidget(initial='ZA')
     ) 
 
+    mobile_number = PhoneNumberField(
+        widget=PhoneNumberPrefixWidget(initial='ZA')
+    ) 
+
     class Meta:
         model = Lead
         fields = '__all__'

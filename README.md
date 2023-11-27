@@ -208,3 +208,12 @@ This will be a temporary roadmap and I might remove some or add to it in the fut
     - [ ] *Key Features:*
       - [ ] Approval routing.
       - [ ] Workflow automation.
+
+32. **Invoicing and Payment Integrations**
+    - *Explanation:* Add the ability to generate send and manage invoices and payment integrations of several types and to be able to
+      have recuring and multiple invoices
+    - [ ] *Key Features:*
+      - [ ] Invoice Generation
+      - [ ] Recurring Invoicing 
+      - [ ] Payment Integrations
+      - [ ] Payment and Invoice Management
