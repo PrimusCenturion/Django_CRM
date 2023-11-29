@@ -7,11 +7,11 @@ from .models import Lead
 class LeadCreationForm(forms.ModelForm):
 
     phone_number = PhoneNumberField(
-        widget=PhoneNumberPrefixWidget(initial='ZA')
+        widget=PhoneNumberPrefixWidget(initial='ZA'), required=False
     ) 
 
     mobile_number = PhoneNumberField(
-        widget=PhoneNumberPrefixWidget(initial='ZA')
+        widget=PhoneNumberPrefixWidget(initial='ZA'), required=False
     ) 
 
     class Meta:
