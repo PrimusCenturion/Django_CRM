@@ -1,6 +1,29 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
+class SocialMediaLink(models.Model):
+    class SocialMediaChoices(models.TextChoices):
+        # TODO Add more options
+        FACEBOOK      = "1", "Facebook"
+        INSTAGRAM     = "2", "Instagram"
+        OTHER         = "3", "Other"
+
+    social_media = models.CharField(
+        max_length=2,
+        choices=SocialMediaChoices.choices,
+        default=SocialMediaChoices.FACEBOOK
+    )
+    prospect = models.ForeignKey(
+        'Lead', 
+        blank = True, 
+        null=True, 
+        on_delete=models.SET_NULL
+        )
+    link = models.SlugField(blank=True, null=True)
+
+    def __str__(self):
+        return self.link
+
 class Lead(models.Model):
     class Month(models.TextChoices):
         MR      = "1", "Mr"
@@ -22,6 +45,8 @@ class Lead(models.Model):
     email = models.EmailField(blank=True, null=True)
     phone_number = PhoneNumberField(blank=True, null=True)
     mobile_number = PhoneNumberField(blank=True, null=True)
+
+    social_media_links = models.ManyToManyField(SocialMediaLink) 
 
     def __str__(self):
         return self.first_name

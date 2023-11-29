@@ -1,0 +1,82 @@
+django.utils.autoreload INFO 2023-11-29 12:50:20,142 autoreload 32128 15636 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:50:49,661 autoreload 32128 15636 D:\Programming\Django_CRM\base\urls.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:50:50,202 autoreload 36168 37172 Watching for file changes with StatReloader
+django.request WARNING 2023-11-29 12:50:55,202 log 36168 34532 Not Found: /
+django.utils.autoreload INFO 2023-11-29 12:51:06,311 autoreload 36168 37172 D:\Programming\Django_CRM\base\urls.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:51:06,881 autoreload 40336 40860 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:51:54,189 autoreload 40336 40860 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:51:54,753 autoreload 23152 8372 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:51:56,102 autoreload 23152 8372 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:51:56,611 autoreload 37128 33120 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:51:59,008 autoreload 37128 33120 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:51:59,534 autoreload 23132 24004 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:52:08,134 autoreload 23132 24004 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:52:08,670 autoreload 15028 39296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:52:11,096 autoreload 15028 39296 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:52:11,616 autoreload 29828 22440 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 12:52:19,189 autoreload 29828 22440 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 12:52:19,711 autoreload 31208 14180 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:11:09,838 autoreload 40812 37980 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:11:24,885 autoreload 40812 37980 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:11:25,397 autoreload 9332 30184 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:11:30,879 autoreload 9332 30184 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:11:31,390 autoreload 15860 36308 Watching for file changes with StatReloader
+django.request ERROR 2023-11-29 13:11:33,461 log 15860 20984 Internal Server Error: /dashboard/lead/1/change/
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 809, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\forms\models.py", line 642, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\forms\models.py", line 321, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (social_media) specified for Lead
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1782, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 811, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (social_media) specified for Lead. Check fields/fieldsets/exclude attributes of class LeadAdmin.
+django.utils.autoreload INFO 2023-11-29 13:11:33,913 autoreload 15860 36308 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:11:34,443 autoreload 23416 35976 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:11:40,976 autoreload 23416 35976 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:11:41,479 autoreload 19972 28884 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:11:42,829 autoreload 19972 28884 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:11:43,357 autoreload 37268 34272 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:12:11,650 autoreload 37268 34272 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:12:12,261 autoreload 38648 40804 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:12:16,584 autoreload 38648 40804 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:12:17,102 autoreload 15088 4996 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:12:21,434 autoreload 15088 4996 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:12:21,951 autoreload 33920 12684 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:22:20,022 autoreload 4964 12904 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:24:10,491 autoreload 4964 12904 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:24:11,043 autoreload 37488 22232 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:24:14,544 autoreload 37488 22232 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:24:15,120 autoreload 16280 18840 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:24:27,918 autoreload 16280 18840 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:24:28,570 autoreload 36752 21960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 13:24:30,974 autoreload 36752 21960 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 13:27:04,433 autoreload 26884 25660 Watching for file changes with StatReloader
