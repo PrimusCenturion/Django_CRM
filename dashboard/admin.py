@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Lead, SocialMediaLink, StreetAddressZA
+from .models import Lead, SocialMediaLink, ZAStreetAddress
 from .forms import LeadCreationForm
 
 class SocialMediaLinksInline(admin.TabularInline):
@@ -8,10 +8,10 @@ class SocialMediaLinksInline(admin.TabularInline):
     classes     = ["collapse"]
     extra       = 1
 
-class StreetAddressZAInline(admin.StackedInline):
+class ZAStreetAddressInline(admin.StackedInline):
     verbose_name = "South African Street Address"
     verbose_name_plural = "South African Street Addresses"
-    model       = StreetAddressZA
+    model       = ZAStreetAddress
     classes     = ["collapse"]
     extra       = 1
 
@@ -63,12 +63,12 @@ class LeadAdmin(admin.ModelAdmin):
 
     inlines = [
         SocialMediaLinksInline, 
-        StreetAddressZAInline
+        ZAStreetAddressInline
     ]
 
-@admin.register(StreetAddressZA)
-class StreetAddressZAAdmin(admin.ModelAdmin):
-    readonly_fields = ["full"]
+# @admin.register(ZAStreetAddress)
+# class ZAStreetAddressAdmin(admin.ModelAdmin):
+#     readonly_fields = ["full"]
 
 # @admin.register(SocialMediaLink)
 # class SocialMediaLinksAdmin(admin.ModelAdmin):

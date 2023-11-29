@@ -1,7 +1,18 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
-class StreetAddressZA(models.Model):
+class ZAStreetAddress(models.Model):
+    class AddressTypes(models.TextChoices):
+        PERSONAL    = "1", "Personal"
+        BUSINESS    = "2", "Business"
+
+    address_type        = models.CharField(
+                            max_length=2,
+                            choices=AddressTypes.choices,
+                            default=AddressTypes.PERSONAL,
+                            blank = True, 
+                            null=True, 
+                        )
     number              = models.IntegerField(blank=True, null=True)
     street              = models.CharField(max_length=200, blank=True, null=True)
     apartment_name      = models.CharField(max_length=200, blank=True, null=True)
@@ -105,7 +116,7 @@ class Lead(models.Model):
     # Company Information
     job_title               = models.CharField(max_length=200, blank=True, null=True)
     company_name            = models.CharField(max_length=200, blank=True, null=True)
-    work_address            = models.ManyToManyField(StreetAddressZA)
+    # work_address            = models.ManyToManyField('StreetAddressZA')
     company_website         = models.URLField(blank=True, null=True)
     company_number          = PhoneNumberField(blank=True, null=True)
 
