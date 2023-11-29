@@ -9,6 +9,12 @@ class StreetAddressZA(models.Model):
     suburb              = models.CharField(max_length=200, blank=True, null=True)
     city                = models.CharField(max_length=200, blank=True, null=True)
     province            = models.CharField(max_length=200, blank=True, null=True) 
+    prospect            = models.ForeignKey(
+                            'Lead', 
+                            blank = True, 
+                            null=True, 
+                            on_delete=models.SET_NULL
+                        )
     # route = TODO this could possibily contain the google map instructions
 
     @property
@@ -99,7 +105,7 @@ class Lead(models.Model):
     # Company Information
     job_title               = models.CharField(max_length=200, blank=True, null=True)
     company_name            = models.CharField(max_length=200, blank=True, null=True)
-    work_address            = models.CharField(max_length=200, blank=True, null=True)
+    work_address            = models.ManyToManyField(StreetAddressZA)
     company_website         = models.URLField(blank=True, null=True)
 
     def __str__(self):

@@ -6,6 +6,12 @@ from .forms import LeadCreationForm
 class SocialMediaLinksInline(admin.TabularInline):
     model       = SocialMediaLink
     classes     = ["collapse"]
+    extra       = 1
+
+class StreetAddressZAInline(admin.StackedInline):
+    model       = StreetAddressZA
+    classes     = ["collapse"]
+    extra       = 1
 
 @admin.display(description="Full Name")
 def upper_case_name(obj):
@@ -31,7 +37,7 @@ class LeadAdmin(admin.ModelAdmin):
                     'email','phone_number', 'mobile_number',
                     'personal_website'
                     ],
-                "description":"TEst"
+                "description":""
             },
         ),
         (
@@ -40,7 +46,7 @@ class LeadAdmin(admin.ModelAdmin):
                 "classes":['collapse'],
                 "fields":[
                     'job_title', 'company_name', 
-                    'company_website', 'work_address'
+                    'company_website',
                     ],
             }
         ),
@@ -54,7 +60,8 @@ class LeadAdmin(admin.ModelAdmin):
     ]
 
     inlines = [
-        SocialMediaLinksInline
+        SocialMediaLinksInline, 
+        StreetAddressZAInline
     ]
 
 @admin.register(StreetAddressZA)
