@@ -85,6 +85,23 @@ class SocialMediaLink(models.Model):
     def __str__(self):
         return f"{self.prospect}, {self.link}"
 
+class Communication(models.Model):
+    class CommunicationType(models.TextChoices):
+        PHONE_CALL          = "1", "Phone Call"
+        EMAIL               = "2", "Email"
+        INSTANT_MESSAGE     = "3", "Instant Message"
+
+
+    prospect = models.ForeignKey('Lead', blank = True, null=True, on_delete=models.SET_NULL)
+    communication_type= models.CharField(
+                            max_length=2,
+                            choices=CommunicationType.choices,
+                            default=CommunicationType.PHONE_CALL,
+                            blank = True, 
+                            null=True, 
+                        )
+    notes = models.TextField(null=True, blank=True)  
+
 class Lead(models.Model):
 
     # Personal Information
@@ -110,15 +127,22 @@ class Lead(models.Model):
     email                   = models.EmailField(blank=True, null=True)
     phone_number            = PhoneNumberField(blank=True, null=True)
     mobile_number           = PhoneNumberField(blank=True, null=True)
-    social_media_links      = models.ManyToManyField(SocialMediaLink)
     personal_website        = models.URLField(blank=True, null=True)
 
     # Company Information
     job_title               = models.CharField(max_length=200, blank=True, null=True)
     company_name            = models.CharField(max_length=200, blank=True, null=True)
-    work_address            = models.ManyToManyField(ZAStreetAddress)
     company_website         = models.URLField(blank=True, null=True)
     company_number          = PhoneNumberField(blank=True, null=True)
+
+    # Social Media Links
+    social_media_links      = models.ManyToManyField(SocialMediaLink)
+
+    # Addresses
+    address                 = models.ManyToManyField(ZAStreetAddress)
+
+    # Communications Preferences
+    communications          = models.ManyToManyField(Communication)
 
     def __str__(self):
         return f"{self.first_name}, {self.last_name}".upper()

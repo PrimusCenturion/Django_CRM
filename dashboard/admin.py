@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Lead, SocialMediaLink, ZAStreetAddress
+from .models import Lead, SocialMediaLink, ZAStreetAddress, Communication
 from .forms import LeadCreationForm
 
 class SocialMediaLinksInline(admin.TabularInline):
@@ -15,6 +15,11 @@ class ZAStreetAddressInline(admin.StackedInline):
     classes     = ["collapse"]
     extra       = 1
 
+class CommunicationsInline(admin.TabularInline):
+    model       = Communication
+    classes     = ["collapse"]
+    extra       = 1
+
 @admin.display(description="Full Name")
 def upper_case_name(obj):
     return f"{obj.first_name}, {obj.last_name}".upper()
@@ -23,7 +28,7 @@ def upper_case_name(obj):
 class LeadAdmin(admin.ModelAdmin):
     form                = LeadCreationForm
     list_display        = (upper_case_name, 'title',)
-    search_fields       = ('first_name','email', )
+    search_fields       = ('first_name','last_name','email', )
     list_filter         = ('title',)
 
     filter_horizontal = ('social_media_links',)
@@ -63,12 +68,9 @@ class LeadAdmin(admin.ModelAdmin):
 
     inlines = [
         SocialMediaLinksInline, 
-        ZAStreetAddressInline
+        ZAStreetAddressInline,
+        CommunicationsInline
     ]
-
-# @admin.register(ZAStreetAddress)
-# class ZAStreetAddressAdmin(admin.ModelAdmin):
-#     readonly_fields = ["full"]
 
 # @admin.register(SocialMediaLink)
 # class SocialMediaLinksAdmin(admin.ModelAdmin):
@@ -76,3 +78,12 @@ class LeadAdmin(admin.ModelAdmin):
 #     search_fields       = ('lead__first_name','lead__last_name')
 #     list_filter         = ('social_media',)
 
+# @admin.register(ZAStreetAddress)
+# class ZAStreetAddressAdmin(admin.ModelAdmin):
+#     readonly_fields = ["full"]
+
+@admin.register(Communication)
+class CommunicationsAdmin(admin.ModelAdmin):
+    list_display        = ('prospect','communication_type', 'notes')
+    search_fields       = ('lead__first_name','lead__last_name')    
+    list_filter         = ('communication_type',)

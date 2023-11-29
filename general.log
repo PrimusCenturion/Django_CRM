@@ -1374,3 +1374,237 @@ django.utils.autoreload INFO 2023-11-29 18:00:25,724 autoreload 39156 31044 Watc
 django.utils.autoreload INFO 2023-11-29 18:00:29,067 autoreload 39156 31044 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
 django.utils.autoreload INFO 2023-11-29 18:00:29,551 autoreload 35244 35448 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2023-11-29 18:04:29,282 autoreload 1300 24032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:28:23,301 autoreload 33600 18752 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:30:38,889 autoreload 18844 29028 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:35:52,650 autoreload 18844 29028 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:35:53,189 autoreload 15596 19760 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:07,062 autoreload 15596 19760 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:07,615 autoreload 36672 10608 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:19,143 autoreload 36672 10608 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:19,660 autoreload 26976 39608 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:23,998 autoreload 26976 39608 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:24,512 autoreload 768 18540 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:33,974 autoreload 768 18540 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:34,537 autoreload 32612 30800 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:37,848 autoreload 32612 30800 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:38,336 autoreload 30948 32356 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:55,008 autoreload 30948 32356 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:55,504 autoreload 24816 2304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:36:57,906 autoreload 24816 2304 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:36:58,422 autoreload 12356 31960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:37:02,777 autoreload 12356 31960 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:37:03,328 autoreload 36976 30276 Watching for file changes with StatReloader
+django.request ERROR 2023-11-29 18:37:14,695 log 36976 9036 Internal Server Error: /dashboard/lead/add/
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'inline_admin_paginator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 206, in select_template
+    return self.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'inline_admin_paginator' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+static
+tz
+django.utils.autoreload INFO 2023-11-29 18:38:44,846 autoreload 36976 30276 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:38:45,378 autoreload 29088 33520 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:38:51,782 autoreload 29088 33520 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:38:52,308 autoreload 31984 39176 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:38:58,698 autoreload 31984 39176 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:38:59,268 autoreload 36720 26420 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:39:16,318 autoreload 36720 26420 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:39:16,868 autoreload 8660 3772 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:39:51,651 autoreload 8660 3772 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:39:52,168 autoreload 37476 39608 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:06,051 autoreload 37476 39608 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:06,588 autoreload 11340 29652 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:10,080 autoreload 11340 29652 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:10,620 autoreload 32248 2072 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:14,067 autoreload 32248 2072 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:14,580 autoreload 38556 17924 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:16,967 autoreload 38556 17924 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:17,473 autoreload 6196 18488 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:19,835 autoreload 6196 18488 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:20,348 autoreload 9700 32492 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:24,666 autoreload 9700 32492 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:25,190 autoreload 35396 2304 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:29,606 autoreload 35396 2304 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:30,134 autoreload 20996 29712 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:31,478 autoreload 20996 29712 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:31,973 autoreload 36492 34196 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:39,502 autoreload 36492 34196 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:40,176 autoreload 3336 35972 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:46,727 autoreload 3336 35972 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:47,244 autoreload 1572 16448 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:55,776 autoreload 1572 16448 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:56,316 autoreload 16836 35872 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:40:58,680 autoreload 16836 35872 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:40:59,250 autoreload 33240 30328 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:41:10,922 autoreload 33240 30328 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:41:11,436 autoreload 20652 36292 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:41:30,523 autoreload 20652 36292 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:41:31,088 autoreload 17708 30432 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:41:35,418 autoreload 17708 30432 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:41:35,947 autoreload 22840 35016 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:41:51,761 autoreload 22840 35016 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:41:52,287 autoreload 35508 30144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:41:54,635 autoreload 35508 30144 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:41:55,148 autoreload 1284 21028 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:42:22,458 autoreload 1284 21028 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:42:22,991 autoreload 39456 22892 Watching for file changes with StatReloader
+django.request ERROR 2023-11-29 18:43:24,583 log 39456 36312 Internal Server Error: /dashboard/communication/
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 836, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\views\main.py", line 122, in __init__
+    self.queryset = self.get_queryset(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\views\main.py", line 529, in get_queryset
+    qs, search_may_have_duplicates = self.model_admin.get_search_results(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1155, in get_search_results
+    queryset = queryset.filter(models.Q.create(term_queries))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1404, in build_filter
+    return self._add_q(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1312, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\query.py", line 1356, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'icontains' for ForeignKey or join on the field not permitted.
+django.utils.autoreload INFO 2023-11-29 18:43:48,629 autoreload 39456 22892 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:43:49,179 autoreload 31668 13456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:43:52,630 autoreload 31668 13456 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:43:53,156 autoreload 3360 27756 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:43:56,581 autoreload 3360 27756 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:43:57,149 autoreload 40296 26212 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:44:07,972 autoreload 40296 26212 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:44:08,566 autoreload 34724 39352 Watching for file changes with StatReloader
