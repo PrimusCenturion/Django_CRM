@@ -1,6 +1,46 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 
+class StreetAddressZA(models.Model):
+    number              = models.IntegerField(blank=True, null=True)
+    street              = models.CharField(max_length=200, blank=True, null=True)
+    apartment_name      = models.CharField(max_length=200, blank=True, null=True)
+    apartment_number    = models.IntegerField(blank=True, null=True)
+    suburb              = models.CharField(max_length=200, blank=True, null=True)
+    city                = models.CharField(max_length=200, blank=True, null=True)
+    province            = models.CharField(max_length=200, blank=True, null=True) 
+    # route = TODO this could possibily contain the google map instructions
+
+    @property
+    def full(self):
+        props = dict(
+            number = self.number,
+            apartment_name = self.apartment_name,
+            apartment_number = self.apartment_number,
+            street = self.street,
+            suburb = self.suburb,
+            city = self.city,
+            province = self.province
+        )
+        output_string = ""
+        for each in props.items():
+            if each[1] == None:
+                pass
+            elif each[0] == "number":
+                output_string += str(each[1])
+            else:
+                output_string += f", {each[1]}"
+        
+        return output_string
+    
+    def __str__(self):
+        return str(self.full)
+    
+    class Meta:
+        verbose_name = "South African Street Address"
+        verbose_name_plural = "South African Street Addresses"
+
+
 class SocialMediaLink(models.Model):
     class SocialMediaChoices(models.TextChoices):
         # TODO Add more options

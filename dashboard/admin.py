@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Lead, SocialMediaLink
+from .models import Lead, SocialMediaLink, StreetAddressZA
 from .forms import LeadCreationForm
 
 class SocialMediaLinksInline(admin.TabularInline):
@@ -29,8 +29,9 @@ class LeadAdmin(admin.ModelAdmin):
                 "fields": [
                     'title', 'first_name', 'last_name',
                     'email','phone_number', 'mobile_number',
-                    'social_media_links', 'personal_website'
+                    'personal_website'
                     ],
+                "description":"TEst"
             },
         ),
         (
@@ -40,7 +41,7 @@ class LeadAdmin(admin.ModelAdmin):
                 "fields":[
                     'job_title', 'company_name', 
                     'company_website', 'work_address'
-                    ]
+                    ],
             }
         ),
         (
@@ -56,10 +57,13 @@ class LeadAdmin(admin.ModelAdmin):
         SocialMediaLinksInline
     ]
 
+@admin.register(StreetAddressZA)
+class StreetAddressZAAdmin(admin.ModelAdmin):
+    readonly_fields = ["full"]
 
-@admin.register(SocialMediaLink)
-class SocialMediaLinksAdmin(admin.ModelAdmin):
-    list_display        = ('prospect','social_media', 'link')
-    search_fields       = ('lead__first_name','lead__last_name')
-    list_filter         = ('social_media',)
+# @admin.register(SocialMediaLink)
+# class SocialMediaLinksAdmin(admin.ModelAdmin):
+#     list_display        = ('prospect','social_media', 'link')
+#     search_fields       = ('lead__first_name','lead__last_name')
+#     list_filter         = ('social_media',)
 
