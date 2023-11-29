@@ -4,8 +4,8 @@ from .models import Lead, SocialMediaLink
 from .forms import LeadCreationForm
 
 class SocialMediaLinksInline(admin.TabularInline):
-    model = SocialMediaLink
-    classes = ["collapse"]
+    model       = SocialMediaLink
+    classes     = ["collapse"]
 
 @admin.display(description="Full Name")
 def upper_case_name(obj):
@@ -13,10 +13,10 @@ def upper_case_name(obj):
 
 @admin.register(Lead)
 class LeadAdmin(admin.ModelAdmin):
-    form = LeadCreationForm
-    list_display = (upper_case_name, 'title',)
-    search_fields = ('first_name','email', )
-    list_filter = ('title',)
+    form                = LeadCreationForm
+    list_display        = (upper_case_name, 'title',)
+    search_fields       = ('first_name','email', )
+    list_filter         = ('title',)
 
     filter_horizontal = ('social_media_links',)
 
@@ -29,7 +29,7 @@ class LeadAdmin(admin.ModelAdmin):
                 "fields": [
                     'title', 'first_name', 'last_name',
                     'email','phone_number', 'mobile_number',
-                    'social_media_links',
+                    'social_media_links', 'personal_website'
                     ],
             },
         ),
@@ -37,7 +37,10 @@ class LeadAdmin(admin.ModelAdmin):
             "Professional Information",
             {
                 "classes":['collapse'],
-                "fields":['job_title', 'company_name', 'work_address']
+                "fields":[
+                    'job_title', 'company_name', 
+                    'company_website', 'work_address'
+                    ]
             }
         ),
         (
@@ -56,7 +59,7 @@ class LeadAdmin(admin.ModelAdmin):
 
 @admin.register(SocialMediaLink)
 class SocialMediaLinksAdmin(admin.ModelAdmin):
-    list_display = ('prospect','social_media', 'link')
-    search_fields = ('lead__first_name','lead__last_name')
-    list_filter = ('social_media',)
+    list_display        = ('prospect','social_media', 'link')
+    search_fields       = ('lead__first_name','lead__last_name')
+    list_filter         = ('social_media',)
 

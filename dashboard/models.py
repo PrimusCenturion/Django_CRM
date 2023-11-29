@@ -10,25 +10,27 @@ class SocialMediaLink(models.Model):
         TWITTER     = "4", "Twitter"
         OTHER       = "5", "Other"
 
-    social_media = models.CharField(
-        max_length=2,
-        choices=SocialMediaChoices.choices,
-        default=SocialMediaChoices.LINKEDIN,
-        blank = True, 
-        null=True, 
-    )
-    prospect = models.ForeignKey(
-        'Lead', 
-        blank = True, 
-        null=True, 
-        on_delete=models.SET_NULL
-        )
-    link = models.URLField(blank=True, null=True)
+    social_media        = models.CharField(
+                            max_length=2,
+                            choices=SocialMediaChoices.choices,
+                            default=SocialMediaChoices.LINKEDIN,
+                            blank = True, 
+                            null=True, 
+                        )
+    prospect            = models.ForeignKey(
+                            'Lead', 
+                            blank = True, 
+                            null=True, 
+                            on_delete=models.SET_NULL
+                        )
+    link                = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.prospect}, {self.link}"
 
 class Lead(models.Model):
+
+    # Personal Information
     class Month(models.TextChoices):
         MR      = "1", "Mr"
         MRS     = "2", "Mrs"
@@ -37,26 +39,28 @@ class Lead(models.Model):
         DR      = "5", "Dr"
         PROF    = "6", "Prof"
 
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
+    first_name              = models.CharField(max_length=200)
+    last_name               = models.CharField(max_length=200)
 
-    title = models.CharField(
-        max_length=2,
-        choices=Month.choices,
-        default=Month.MR,
-        blank=True,
-        null=True
-    )
+    title                   = models.CharField(
+                                max_length=2,
+                                choices=Month.choices,
+                                default=Month.MR,
+                                blank=True,
+                                null=True
+                            )
 
-    email = models.EmailField(blank=True, null=True)
-    phone_number = PhoneNumberField(blank=True, null=True)
-    mobile_number = PhoneNumberField(blank=True, null=True)
+    email                   = models.EmailField(blank=True, null=True)
+    phone_number            = PhoneNumberField(blank=True, null=True)
+    mobile_number           = PhoneNumberField(blank=True, null=True)
+    social_media_links      = models.ManyToManyField(SocialMediaLink)
+    personal_website        = models.URLField(blank=True, null=True)
 
-    social_media_links = models.ManyToManyField(SocialMediaLink) 
-
-    job_title = models.CharField(max_length=200, blank=True, null=True)
-    company_name = models.CharField(max_length=200, blank=True, null=True)
-    work_address = models.CharField(max_length=200, blank=True, null=True)
+    # Company Information
+    job_title               = models.CharField(max_length=200, blank=True, null=True)
+    company_name            = models.CharField(max_length=200, blank=True, null=True)
+    work_address            = models.CharField(max_length=200, blank=True, null=True)
+    company_website         = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.first_name}, {self.last_name}".upper()
