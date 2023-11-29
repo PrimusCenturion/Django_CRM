@@ -4,14 +4,16 @@ from phonenumber_field.modelfields import PhoneNumberField
 class SocialMediaLink(models.Model):
     class SocialMediaChoices(models.TextChoices):
         # TODO Add more options
-        FACEBOOK      = "1", "Facebook"
-        INSTAGRAM     = "2", "Instagram"
-        OTHER         = "3", "Other"
+        LINKEDIN    = "1", "LinkedIn"
+        FACEBOOK    = "2", "Facebook"
+        INSTAGRAM   = "3", "Instagram"
+        TWITTER     = "4", "Twitter"
+        OTHER       = "5", "Other"
 
     social_media = models.CharField(
         max_length=2,
         choices=SocialMediaChoices.choices,
-        default=SocialMediaChoices.FACEBOOK
+        default=SocialMediaChoices.LINKEDIN
     )
     prospect = models.ForeignKey(
         'Lead', 
