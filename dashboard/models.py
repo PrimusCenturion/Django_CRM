@@ -13,7 +13,9 @@ class SocialMediaLink(models.Model):
     social_media = models.CharField(
         max_length=2,
         choices=SocialMediaChoices.choices,
-        default=SocialMediaChoices.LINKEDIN
+        default=SocialMediaChoices.LINKEDIN,
+        blank = True, 
+        null=True, 
     )
     prospect = models.ForeignKey(
         'Lead', 
@@ -21,10 +23,10 @@ class SocialMediaLink(models.Model):
         null=True, 
         on_delete=models.SET_NULL
         )
-    link = models.SlugField(blank=True, null=True)
+    link = models.URLField(blank=True, null=True)
 
     def __str__(self):
-        return self.link
+        return f"{self.prospect}, {self.link}"
 
 class Lead(models.Model):
     class Month(models.TextChoices):
@@ -41,7 +43,9 @@ class Lead(models.Model):
     title = models.CharField(
         max_length=2,
         choices=Month.choices,
-        default=Month.MR
+        default=Month.MR,
+        blank=True,
+        null=True
     )
 
     email = models.EmailField(blank=True, null=True)
@@ -51,5 +55,5 @@ class Lead(models.Model):
     social_media_links = models.ManyToManyField(SocialMediaLink) 
 
     def __str__(self):
-        return self.first_name
+        return f"{self.first_name}, {self.last_name}".upper()
 

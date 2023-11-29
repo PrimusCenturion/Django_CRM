@@ -3,11 +3,23 @@ from django.contrib import admin
 from .models import Lead, SocialMediaLink
 from .forms import LeadCreationForm
 
+class SocialMediaLinksInline(admin.TabularInline):
+    model = SocialMediaLink
+    classes = ["collapse"]
+
+@admin.display(description="Full Name")
+def upper_case_name(obj):
+    return f"{obj.first_name}, {obj.last_name}".upper()
+
+@admin.register(Lead)
 class LeadAdmin(admin.ModelAdmin):
     form = LeadCreationForm
-    list_display = ('first_name', 'last_name', 'title',)
+    list_display = (upper_case_name, 'title',)
     search_fields = ('first_name','email', )
     list_filter = ('title',)
+
+    filter_horizontal = ('social_media_links',)
+
     #  TODO Finish this fieldset to include all the relevant data and 
     #  relevant headings
     fieldsets = [
@@ -30,5 +42,14 @@ class LeadAdmin(admin.ModelAdmin):
         ),
     ]
 
-admin.site.register(Lead, LeadAdmin)
-admin.site.register(SocialMediaLink)
+    inlines = [
+        SocialMediaLinksInline
+    ]
+
+
+@admin.register(SocialMediaLink)
+class SocialMediaLinksAdmin(admin.ModelAdmin):
+    list_display = ('prospect','social_media', 'link')
+    search_fields = ('lead__first_name','lead__last_name')
+    list_filter = ('social_media',)
+
