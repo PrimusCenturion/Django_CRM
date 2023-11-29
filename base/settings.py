@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'phonenumber_field',
+    'django_admin_inline_paginator',
+    'django_quill',
 ]
 
 MIDDLEWARE = [

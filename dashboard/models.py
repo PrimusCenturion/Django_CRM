@@ -1,5 +1,6 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+from django_quill.fields import QuillField
 
 class ZAStreetAddress(models.Model):
     class AddressTypes(models.TextChoices):
@@ -100,7 +101,7 @@ class Communication(models.Model):
                             blank = True, 
                             null=True, 
                         )
-    notes = models.TextField(null=True, blank=True)  
+    notes = QuillField(blank = True, null=True, )
 
 class Lead(models.Model):
 

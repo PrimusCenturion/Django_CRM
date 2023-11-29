@@ -11,6 +11,7 @@ django-phonenumber-field = {extras = ["phonenumbers"], version = "*"}
 babel = "*"
 selenium = "*"
 django-admin-inline-paginator = "*"
+django-quill-editor = "*"
 
 [dev-packages]
 

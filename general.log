@@ -1608,3 +1608,20 @@ django.utils.autoreload INFO 2023-11-29 18:43:56,581 autoreload 3360 27756 D:\Pr
 django.utils.autoreload INFO 2023-11-29 18:43:57,149 autoreload 40296 26212 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2023-11-29 18:44:07,972 autoreload 40296 26212 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
 django.utils.autoreload INFO 2023-11-29 18:44:08,566 autoreload 34724 39352 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:48:08,678 autoreload 23364 25296 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:49:16,762 autoreload 23364 25296 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:49:17,327 autoreload 5220 21136 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:49:18,683 autoreload 5220 21136 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:49:19,247 autoreload 40464 37856 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:49:31,277 autoreload 40464 37856 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:49:31,842 autoreload 2252 38456 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:49:39,433 autoreload 2252 38456 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:49:40,016 autoreload 3392 26180 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:49:52,935 autoreload 3392 26180 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:49:53,509 autoreload 16360 31648 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:50:04,434 autoreload 16360 31648 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:50:04,966 autoreload 37104 26796 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:50:39,663 autoreload 37104 26796 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:50:40,186 autoreload 23812 38572 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 18:50:41,537 autoreload 23812 38572 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 18:50:42,059 autoreload 33844 17448 Watching for file changes with StatReloader

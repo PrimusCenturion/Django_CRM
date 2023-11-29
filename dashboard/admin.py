@@ -1,24 +1,26 @@
 from django.contrib import admin
 
+from django_admin_inline_paginator.admin import TabularInlinePaginated
+
 from .models import Lead, SocialMediaLink, ZAStreetAddress, Communication
 from .forms import LeadCreationForm
 
 class SocialMediaLinksInline(admin.TabularInline):
     model       = SocialMediaLink
     classes     = ["collapse"]
-    extra       = 1
+    extra       = 0
 
 class ZAStreetAddressInline(admin.StackedInline):
     verbose_name = "South African Street Address"
     verbose_name_plural = "South African Street Addresses"
     model       = ZAStreetAddress
     classes     = ["collapse"]
-    extra       = 1
+    extra       = 0
 
-class CommunicationsInline(admin.TabularInline):
+class CommunicationsInline(TabularInlinePaginated):
     model       = Communication
-    classes     = ["collapse"]
-    extra       = 1
+    per_page    = 3
+    extra       = 0
 
 @admin.display(description="Full Name")
 def upper_case_name(obj):
