@@ -1305,3 +1305,10 @@ Traceback (most recent call last):
     return super().execute(query, params)
 django.db.utils.OperationalError: no such column: dashboard_lead.company_number
 django.utils.autoreload INFO 2023-11-29 17:28:45,367 autoreload 22572 24144 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:30:49,730 autoreload 36528 24004 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:31:08,995 autoreload 36528 24004 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:31:09,512 autoreload 13724 39708 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:31:12,979 autoreload 13724 39708 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:31:13,510 autoreload 39628 27488 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:31:15,919 autoreload 39628 27488 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:31:16,448 autoreload 34184 8976 Watching for file changes with StatReloader

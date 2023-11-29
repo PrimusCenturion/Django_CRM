@@ -9,6 +9,8 @@ class SocialMediaLinksInline(admin.TabularInline):
     extra       = 1
 
 class StreetAddressZAInline(admin.StackedInline):
+    verbose_name = "South African Street Address"
+    verbose_name_plural = "South African Street Addresses"
     model       = StreetAddressZA
     classes     = ["collapse"]
     extra       = 1
