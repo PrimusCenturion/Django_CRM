@@ -116,7 +116,7 @@ class Lead(models.Model):
     # Company Information
     job_title               = models.CharField(max_length=200, blank=True, null=True)
     company_name            = models.CharField(max_length=200, blank=True, null=True)
-    # work_address            = models.ManyToManyField('StreetAddressZA')
+    work_address            = models.ManyToManyField(ZAStreetAddress)
     company_website         = models.URLField(blank=True, null=True)
     company_number          = PhoneNumberField(blank=True, null=True)
 
