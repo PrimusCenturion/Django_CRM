@@ -107,6 +107,7 @@ class Lead(models.Model):
     company_name            = models.CharField(max_length=200, blank=True, null=True)
     work_address            = models.ManyToManyField(StreetAddressZA)
     company_website         = models.URLField(blank=True, null=True)
+    company_number          = PhoneNumberField(blank=True, null=True)
 
     def __str__(self):
         return f"{self.first_name}, {self.last_name}".upper()

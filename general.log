@@ -1223,3 +1223,85 @@ django.utils.autoreload INFO 2023-11-29 16:42:14,168 autoreload 38568 25484 Watc
 django.utils.autoreload INFO 2023-11-29 17:24:44,282 autoreload 7000 37064 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2023-11-29 17:24:50,858 autoreload 7000 37064 D:\Programming\Django_CRM\dashboard\forms.py changed, reloading.
 django.utils.autoreload INFO 2023-11-29 17:24:51,406 autoreload 40728 3256 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:26:37,321 autoreload 34544 39068 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:35,542 autoreload 34544 39068 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:27:36,104 autoreload 26304 37332 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:41,679 autoreload 26304 37332 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:27:42,182 autoreload 32856 38496 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:43,562 autoreload 32856 38496 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:27:44,112 autoreload 37764 28520 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:45,484 autoreload 37764 28520 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:27:46,007 autoreload 38940 39032 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:47,359 autoreload 38940 39032 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:27:47,858 autoreload 33516 29496 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:50,250 autoreload 33516 29496 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:27:50,801 autoreload 26976 39964 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:27:59,502 autoreload 26976 39964 D:\Programming\Django_CRM\dashboard\forms.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:28:00,001 autoreload 28196 28408 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:28:03,282 autoreload 28196 28408 D:\Programming\Django_CRM\dashboard\forms.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:28:03,783 autoreload 30984 7784 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:28:12,454 autoreload 30984 7784 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:28:12,974 autoreload 37900 22736 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 17:28:15,388 autoreload 37900 22736 D:\Programming\Django_CRM\dashboard\admin.py changed, reloading.
+django.utils.autoreload INFO 2023-11-29 17:28:15,891 autoreload 34496 30536 Watching for file changes with StatReloader
+django.request ERROR 2023-11-29 17:28:16,217 log 34496 17544 Internal Server Error: /dashboard/lead/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: dashboard_lead.company_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 1767, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\contrib\admin\options.py", line 866, in get_object
+    return queryset.get(**{field.name: object_id})
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: dashboard_lead.company_number
+django.utils.autoreload INFO 2023-11-29 17:28:45,367 autoreload 22572 24144 Watching for file changes with StatReloader

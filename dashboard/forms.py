@@ -14,6 +14,10 @@ class LeadCreationForm(forms.ModelForm):
         widget=PhoneNumberPrefixWidget(initial='ZA'), required=False
     ) 
 
+    company_number = PhoneNumberField(
+        widget=PhoneNumberPrefixWidget(initial='ZA'), required=False
+    ) 
+
     class Meta:
         model = Lead
         fields = '__all__'

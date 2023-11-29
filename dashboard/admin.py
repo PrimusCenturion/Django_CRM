@@ -46,7 +46,7 @@ class LeadAdmin(admin.ModelAdmin):
                 "classes":['collapse'],
                 "fields":[
                     'job_title', 'company_name', 
-                    'company_website',
+                    'company_website', 'company_number'
                     ],
             }
         ),
