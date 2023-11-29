@@ -425,3 +425,4 @@ django.utils.autoreload INFO 2023-11-29 14:08:10,152 autoreload 27460 30452 D:\P
 django.utils.autoreload INFO 2023-11-29 14:08:10,707 autoreload 32576 8276 Watching for file changes with StatReloader
 django.utils.autoreload INFO 2023-11-29 14:08:20,390 autoreload 32576 8276 D:\Programming\Django_CRM\dashboard\models.py changed, reloading.
 django.utils.autoreload INFO 2023-11-29 14:08:20,965 autoreload 39196 36568 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-29 14:11:06,792 autoreload 16556 34196 Watching for file changes with StatReloader

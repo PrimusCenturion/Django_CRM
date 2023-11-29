@@ -34,6 +34,13 @@ class LeadAdmin(admin.ModelAdmin):
             },
         ),
         (
+            "Professional Information",
+            {
+                "classes":['collapse'],
+                "fields":['job_title', 'company_name', 'work_address']
+            }
+        ),
+        (
             "Advanced options",
             {
                 "classes": ["collapse"],

@@ -54,6 +54,10 @@ class Lead(models.Model):
 
     social_media_links = models.ManyToManyField(SocialMediaLink) 
 
+    job_title = models.CharField(max_length=200, blank=True, null=True)
+    company_name = models.CharField(max_length=200, blank=True, null=True)
+    work_address = models.CharField(max_length=200, blank=True, null=True)
+
     def __str__(self):
         return f"{self.first_name}, {self.last_name}".upper()
 
