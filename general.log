@@ -1527,3 +1527,1803 @@ Traceback (most recent call last):
   File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\smartif.py", line 197, in parse
     raise self.error_class(
 django.template.exceptions.TemplateSyntaxError: Unused 'request.session.TEST' at end of if expression.
+django.utils.autoreload INFO 2023-11-30 10:37:12,595 autoreload 27456 38672 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:07:02,029 autoreload 27456 38672 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:07:02,634 autoreload 11672 37416 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:07:09,223 autoreload 11672 37416 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:07:09,780 autoreload 38360 27220 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:07:12,210 autoreload 38360 27220 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:07:12,774 autoreload 18740 12208 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:07:16,216 autoreload 18740 12208 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:07:16,807 autoreload 40596 40528 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:00,641 autoreload 40596 40528 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:01,245 autoreload 40376 30704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:05,741 autoreload 40376 30704 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:06,311 autoreload 18424 25176 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:19,158 autoreload 18424 25176 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:19,715 autoreload 39076 38140 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:24,028 autoreload 39076 38140 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:24,601 autoreload 33864 39804 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:25,812 autoreload 33864 39804 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:26,358 autoreload 27912 30584 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:29,775 autoreload 27912 30584 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:30,334 autoreload 25304 40072 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:08:31,703 autoreload 25304 40072 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:08:32,255 autoreload 19136 39812 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:18:21,932 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:18:22,576 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:18:23,041 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:18:48,972 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:18:49,542 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:18:49,729 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:18:49,894 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:04,548 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:04,888 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:05,087 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:05,248 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:05,409 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:05,572 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:05,811 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:05,984 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:06,148 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.request ERROR 2023-11-30 11:20:06,231 log 19136 31636 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'cookie_preferences'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+crispy_forms_field
+crispy_forms_filters
+crispy_forms_tags
+crispy_forms_utils
+i18n
+l10n
+log
+paginated_inline
+static
+tz
+django.utils.autoreload INFO 2023-11-30 11:23:05,235 autoreload 37776 16344 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:24:22,459 autoreload 37776 16344 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:24:23,051 autoreload 15636 13552 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:24:42,048 autoreload 15636 13552 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:24:42,584 autoreload 23880 25380 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:24:46,044 autoreload 23880 25380 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:24:46,626 autoreload 23820 10276 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:26:43,008 autoreload 23820 10276 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:26:43,531 autoreload 28188 20936 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:13,959 autoreload 28188 20936 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:14,482 autoreload 34332 37640 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:20,031 autoreload 34332 37640 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:20,580 autoreload 9748 39644 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:22,001 autoreload 9748 39644 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:22,549 autoreload 880 38148 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:23,907 autoreload 880 38148 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:24,411 autoreload 12444 38900 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:27,897 autoreload 12444 38900 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:28,441 autoreload 31388 17544 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:29,780 autoreload 31388 17544 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:30,283 autoreload 9960 40700 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:52,402 autoreload 9960 40700 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:52,915 autoreload 33376 28624 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:27:57,406 autoreload 33376 28624 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:27:57,956 autoreload 7932 25800 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:00,335 autoreload 7932 25800 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:00,910 autoreload 19000 33944 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:06,449 autoreload 19000 33944 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:06,979 autoreload 33740 39008 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:22,863 autoreload 33740 39008 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:23,401 autoreload 38804 24668 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:24,789 autoreload 38804 24668 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:25,356 autoreload 38164 27156 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:29,843 autoreload 38164 27156 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:30,429 autoreload 10500 32960 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:50,559 autoreload 10500 32960 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:51,085 autoreload 40436 4004 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:53,489 autoreload 40436 4004 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:54,008 autoreload 18140 26808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:28:57,471 autoreload 18140 26808 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:28:57,958 autoreload 30740 4948 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:29:36,243 autoreload 38444 38480 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:29:37,821 log 38444 18288 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+TypeError: cookie_preferences_tag() takes 0 positional arguments but 2 were given
+django.request ERROR 2023-11-30 11:29:38,549 log 38444 18288 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+TypeError: cookie_preferences_tag() takes 0 positional arguments but 2 were given
+django.request ERROR 2023-11-30 11:29:39,024 log 38444 18288 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+TypeError: cookie_preferences_tag() takes 0 positional arguments but 2 were given
+django.utils.autoreload INFO 2023-11-30 11:30:15,007 autoreload 38444 38480 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:30:15,526 autoreload 36408 36228 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:30:23,075 autoreload 36408 36228 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:30:23,644 autoreload 30728 29704 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:30:55,063 autoreload 30728 29704 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:30:55,682 autoreload 38284 27260 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:31:17,782 autoreload 38284 27260 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:31:18,298 autoreload 28520 20152 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:31:35,618 log 28520 40584 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py", line 14, in render
+    print(context['cookie_preferences'])
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'cookie_preferences'
+django.utils.autoreload INFO 2023-11-30 11:32:43,723 autoreload 28520 20152 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:32:44,275 autoreload 10612 36664 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:32:49,621 autoreload 10612 36664 D:\Programming\Django_CRM\pages\views.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:32:50,119 autoreload 38508 36900 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:33:24,770 autoreload 38508 36900 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:33:25,307 autoreload 35332 39796 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:34:22,107 autoreload 20752 19652 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:34:31,873 autoreload 20752 19652 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:34:32,385 autoreload 11340 13832 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:36:03,924 autoreload 11340 13832 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:36:04,437 autoreload 28520 29984 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:37:12,450 autoreload 11760 40468 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:37:15,743 log 11760 31724 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 181, in compile_func
+    args, kwargs = parse_bits(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 362, in parse_bits
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences_tag' did not receive value(s) for the argument(s): 'parser', 'token'
+django.request ERROR 2023-11-30 11:37:16,757 log 11760 31724 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 181, in compile_func
+    args, kwargs = parse_bits(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 362, in parse_bits
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences_tag' did not receive value(s) for the argument(s): 'parser', 'token'
+django.request ERROR 2023-11-30 11:37:17,056 log 11760 31724 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 181, in compile_func
+    args, kwargs = parse_bits(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 362, in parse_bits
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences_tag' did not receive value(s) for the argument(s): 'parser', 'token'
+django.request ERROR 2023-11-30 11:37:27,945 log 11760 31724 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 181, in compile_func
+    args, kwargs = parse_bits(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 362, in parse_bits
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences_tag' did not receive value(s) for the argument(s): 'parser', 'token'
+django.request ERROR 2023-11-30 11:37:28,460 log 11760 31724 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 181, in compile_func
+    args, kwargs = parse_bits(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 362, in parse_bits
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences_tag' did not receive value(s) for the argument(s): 'parser', 'token'
+django.utils.autoreload INFO 2023-11-30 11:37:28,523 autoreload 11760 40468 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:37:29,067 autoreload 36556 40448 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:37:29,413 log 36556 23684 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 277, in render
+    new_context["csrf_token"] = csrf_token
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\context.py", line 64, in __setitem__
+    self.dicts[-1][key] = value
+TypeError: 'ShowNodesNode' object does not support item assignment
+django.utils.autoreload INFO 2023-11-30 11:37:37,694 autoreload 36556 40448 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:37:38,240 autoreload 31716 11808 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:37:54,818 autoreload 38392 33684 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:37:56,229 log 38392 11708 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 181, in compile_func
+    args, kwargs = parse_bits(
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 302, in parse_bits
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'cookie_preferences_tag' is decorated with takes_context=True so it must have a first argument of 'context'
+django.utils.autoreload INFO 2023-11-30 11:38:06,672 autoreload 38392 33684 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:38:07,198 autoreload 39536 28444 Watching for file changes with StatReloader
+django.request ERROR 2023-11-30 11:38:09,263 log 39536 29416 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 277, in render
+    new_context["csrf_token"] = csrf_token
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\context.py", line 64, in __setitem__
+    self.dicts[-1][key] = value
+TypeError: 'ShowNodesNode' object does not support item assignment
+django.request ERROR 2023-11-30 11:38:10,366 log 39536 29416 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\library.py", line 277, in render
+    new_context["csrf_token"] = csrf_token
+  File "C:\Users\Martin\.virtualenvs\Django_CRM-vcHxyza5\lib\site-packages\django\template\context.py", line 64, in __setitem__
+    self.dicts[-1][key] = value
+TypeError: 'ShowNodesNode' object does not support item assignment
+django.utils.autoreload INFO 2023-11-30 11:38:51,201 autoreload 39536 28444 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:38:51,725 autoreload 12824 20444 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:38:53,069 autoreload 12824 20444 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:38:53,582 autoreload 14944 3384 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:38:56,002 autoreload 14944 3384 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:38:56,521 autoreload 8652 38576 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:38:57,897 autoreload 8652 38576 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:38:58,446 autoreload 25444 16140 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:39:02,943 autoreload 25444 16140 D:\Programming\Django_CRM\pages\templatetags\cookie_preferences.py changed, reloading.
+django.utils.autoreload INFO 2023-11-30 11:39:03,480 autoreload 37280 19768 Watching for file changes with StatReloader
+django.utils.autoreload INFO 2023-11-30 11:40:30,016 autoreload 22524 32960 Watching for file changes with StatReloader

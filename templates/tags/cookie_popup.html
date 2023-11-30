@@ -1,0 +1,66 @@
+{% if 'accepted' in cookie_preferences %}
+{% else %}
+<div class="modal fade d-flex flex-column justify-content-center align-items-center" id="cookiePopup"
+    data-keyboard="false" data-backdrop="static" tabindex="-1" aria-labelledby="cookiePopupLabel" aria-hidden="true">
+    <div class="modal-dialog m-5">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="cookiePopupLabel">Cookie Preferences</h1>
+            </div>
+            <div class="modal-body text-center m-1" id="CookiePreferenceWrapper">
+                <div class="mb-3">
+                    "🍪 Welcome! We use cookies to enhance your browsing experience and analyze site traffic. By
+                    continuing to use this site, you consent to our use of cookies. For more information, please read
+                    our [Cookie Policy]. 🍪"
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CookiePreferences" id="CookiePreferenceAccept"
+                        value="Accept" checked>
+                    <label class="form-check-label" for="CookiePreferenceAccept">Accept</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CookiePreferences" id="CookiePreferenceDecline"
+                        value="Decline">
+                    <label class="form-check-label" for="CookiePreferenceDecline">Decline</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="CookiePreferencesSubmit" class="btn btn-primary" type="submit" data-bs-dismiss="modal">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('cookiePopup'), { backdrop: 'static', keyboard: false })
+    setTimeout(function () {
+        myModal.show()
+    }, 2000)
+
+    var csrfToken = '{{csrf_token}}'
+    wrapper = document.getElementById('CookiePreferenceWrapper')
+    button = document.getElementById('CookiePreferencesSubmit')
+
+    button.onclick = () => {
+        const requestObj = new XMLHttpRequest()
+        // requestObj.onreadystatechange = function () {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //         console.log(this.responseText)
+        //     }
+        // }
+
+        requestObj.open("POST", '{% url "cookie" %}')
+        requestObj.setRequestHeader('X-CSRFToken', csrfToken)
+
+        const formdata = new FormData()
+
+        accepted_radio = document.getElementById('CookiePreferenceAccept').checked
+        declined_radio = document.getElementById('CookiePreferenceDecline').checked
+
+        formdata.append('accepted', accepted_radio)
+        formdata.append('declined', declined_radio)
+
+        requestObj.send(formdata)
+    }
+
+</script>
+{% endif %}

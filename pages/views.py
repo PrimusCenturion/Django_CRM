@@ -7,8 +7,10 @@ class HomePageView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        if "TEST" in self.request.session:
-            context['TEST'] = self.request.session['TEST']
+        if "cookie_preferences" in self.request.session:
+            context['cookie_preferences'] = self.request.session['cookie_preferences']
+        else:
+            context['cookie_preferences'] = []
         return context
 
     # def get(self, request, *args, **kwargs):
@@ -25,10 +27,16 @@ def cookie_preferences(request):
         
         if request.method == "POST":
             if request.POST.get('accepted') == 'true':
-                if "TEST" in request.session:
-                    request.session['TEST'].append("VISIT")
+                if "cookie_preferences" in request.session:
+                    request.session['cookie_preferences'].append("accepted")
                 else:
-                    request.session['TEST'] = ["VISIT"]
+                    request.session['cookie_preferences'] = ["accepted"]
+                request.session.modified = True
+            else:
+                if "cookie_preferences" in request.session:
+                    request.session['cookie_preferences'].append("declined")
+                else:
+                    request.session['cookie_preferences'] = ["declined"]
                 request.session.modified = True
             return HttpResponse(status=200)
         
